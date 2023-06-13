@@ -1,0 +1,145 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+:root{
+    font-family: 'Mukta', sans-serif;
+
+    font-size: 3vh;
+    --Signup_division_color:#fec870; 
+    --Signup_division_boxshadow_color: rgb(203, 203, 203) ; 
+    --Input_division_background_color: #f6f7fb; 
+    --Signup_button_color: #fec870; 
+}
+
+body{
+    background-color: white;
+}
+
+/* Signup division  */
+
+.forgotpw{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+    height: 14rem;
+    background-color: var(--Input_division_background_color);
+    box-shadow: 0.10rem 0.20rem 0.20rem var(--Signup_division_boxshadow_color);
+}
+
+/* Input field main division  */
+
+.Input_division{
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    background-color: var(--Input_division_background_color) ;
+}
+
+/* Website logo and name div  */
+
+.Website_logo_title_div{
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    width: 100%;
+    padding-top: 1.10rem;
+    padding: 1rem;
+}
+
+/* Website logo div  */
+
+.Website_logo_div{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    float: left;
+}
+
+/* Website logo  */
+
+.Website_logo{
+    margin: auto;
+    height: 2rem;
+    width: 2rem;
+}
+
+/* Website name div  */
+
+.Website_title{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: fit-content;
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.10rem;
+    margin-left: 0.80rem;
+}
+
+/* Input taken field div  */
+
+.Input_option_division{
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+/* Input field  */
+
+.Input_option{
+    border-radius: 5px;
+    font-size: 0.90rem;
+    font-family: 'Mukta', sans-serif;
+}
+
+/* send varification button  */
+
+.Submit_button{
+    font-family: 'Mukta', sans-serif;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 0.80rem;
+    margin-bottom: 1rem;
+    padding-top: 0.30rem;
+    padding-bottom: 0.30rem;
+    width: 100%;
+    border: 0px;
+    background-color: var(--Signup_button_color);
+}
+
+@media only screen and (max-width:500px){
+    :root{
+        font-size: 2.85vh;
+    }
+     
+    .forgotpw{
+        background-color: var(--Input_division_background_color);
+        width: 93%;
+    }
+
+    .Website_logo_title_div{
+        padding-top: 1rem;
+        padding-left: 0.60rem;
+    }
+
+    .Input_division{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width:700px) and (max-width:1100px){
+    .forgotpw{
+        width: 90%;
+    }
+}
